@@ -12,7 +12,7 @@
 <body>
     <nav class="navbar background h-nav-resp">
         <ul class="nav-list v-class-resp">
-            <div class="logo"><img src="img/img.jpg" alt="logo"></div>
+            <div class="logo"><img src="img/img.jpg" alt="logo" id="profilePic">></div>
             <li><a href="#">Home</a></li>
             <li><a href="#aboutMe">About Me</a></li>
             <li><a href="#experienceAndSkills">Experience & Skills</a></li>
@@ -28,6 +28,25 @@
             <div class="line"></div>
         </div>
     </nav>
+
+    <div class="popup" id="popupModal">
+        <div class="close" id="closeBtn">×</div>
+        <img src="img/img.jpg" alt="User profile picture">
+        <div class="email"><b>Personal mail : </b>aryagupta164@gmail.com</div>
+        <div class="email"><b>Edu mail : </b>arya.gupta2024@uem.edu.in</div>
+        <div class="name">Arya Gupta</div>
+        <div class="manage-account">Manage your Google Account</div>
+        <div class="buttons">
+            <div class="btn"><i class="fas fa-user-plus"></i> Add account</div>
+            <div class="btn"><i class="fas fa-sign-out-alt"></i> Sign out</div>
+        </div>
+        <div class="storage">
+            <i class="fas fa-cloud"></i> 67% of 15 GB used
+        </div>
+        <div class="footer">
+            <a href="#">Privacy policy</a> · <a href="#">Terms of service</a>
+        </div>
+    </div>
 
     <section class="background firstSection">
         <div class="box-main">
@@ -112,7 +131,7 @@
     </footer>
 
     <script src="js/resp.js"></script>
-
+    <script src="js/modal.js"></script>
 </body>
 
 </html>
