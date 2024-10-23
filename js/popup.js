@@ -1,0 +1,2 @@
+// Get elements
+const profilePic
