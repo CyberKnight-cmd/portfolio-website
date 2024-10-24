@@ -9,17 +9,19 @@
 </head>
 
 <body>
-    <nav class="navbar background h-nav-resp">
-        <ul class="nav-list v-class-resp">
-            <div class="logo"><img src="img/img.jpg" alt="logo" id="profilePic"></div>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="img/img.jpg" alt="Logo" id="profilePic">
+        </div>
+        <ul class="nav-list">
             <li><a href="#">Home</a></li>
             <li><a href="#aboutMe">About Me</a></li>
             <li><a href="#experienceAndSkills">Experience & Skills</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contactMe">Contact Me</a></li>
         </ul>
-        <div class="rightNav v-class-resp">
-            <input type="text" name="search" id="search" placeholder="Search...">
+        <div class="rightNav">
+            <input type="text" id="search" placeholder="Search...">
             <button class="btn btn-sm">Search</button>
         </div>
         <div class="burger">
@@ -28,25 +30,25 @@
             <div class="line"></div>
         </div>
     </nav>
+
     <div class="popup" id="popupModal">
         <div class="close" id="closeBtn">×</div>
-        <img src="img/img.jpg" alt="User profile picture">
-        <div class="email"><b>Personal mail : </b>aryagupta164@gmail.com</div>
-        <div class="email"><b>Edu mail : </b>arya.gupta2024@uem.edu.in</div>
+        <img src="img/img.jpg" alt="User Profile Picture">
+        <div class="email"><strong>Personal Mail:</strong> aryagupta164@gmail.com</div>
+        <div class="email"><strong>Edu Mail:</strong> arya.gupta2024@uem.edu.in</div>
         <div class="name">Arya Gupta</div>
-        <div class="manage-account">Manage your Google Account</div>
+        <div class="manage-account">Manage Your Google Account</div>
         <div class="buttons">
-            <div class="btn"><i class="fas fa-user-plus"></i> Add account</div>
-            <div class="btn"><i class="fas fa-sign-out-alt"></i> Sign out</div>
+            <div class="btn"><i class="fas fa-user-plus"></i> Add Account</div>
+            <div class="btn"><i class="fas fa-sign-out-alt"></i> Sign Out</div>
         </div>
-        <div class="storage">
-            <i class="fas fa-cloud"></i> 67% of 15 GB used
-        </div>
+        <div class="storage"><i class="fas fa-cloud"></i> 67% of 15 GB Used</div>
         <div class="footer">
-            <a href="#">Privacy policy</a> · <a href="#">Terms of service</a>
+            <a href="#">Privacy Policy</a> · <a href="#">Terms of Service</a>
         </div>
     </div>
-    <section class="background firstSection">
+
+    <section class="firstSection">
         <div class="box-main">
             <div class="firstHalf">
                 <p class="text-big">
@@ -68,7 +70,7 @@
         </div>
     </section>
 
-    <section class="section section-left" id="aboutMe">
+    <section class="section" id="aboutMe">
         <div class="paras">
             <p class="sectionTag text-big">About Me</p>
             <p class="sectionSubTag text-small">
@@ -76,22 +78,16 @@
                 My journey started with curiosity about websites and evolved into building full-fledged applications. 
                 Currently, I’m working on a geolocation-based attendance app and exploring Python automation.
             </p>
-
             <h3>Educational Background</h3>
             <p>Pursuing B.Tech in Computer Science Engineering at UEM Kolkata.</p>
-
             <h3>Paper/Patent Publications</h3>
-            <p>Working towards a research paper on AI applications in healthcare.</p>
-
+            <p>Working on a research paper on AI applications in healthcare.</p>
             <h3>Awards and Achievements</h3>
-            <p>Participant in <b>Devsprint 2024</b>, a web and app development workshop.</p>
-
+            <p>Participant in <strong>Devsprint 2024</strong>, a web and app development workshop.</p>
             <h3>Membership</h3>
             <p>Active member of tech communities and open-source projects.</p>
-
             <h3>Research Thrust Area</h3>
             <p>AI in healthcare and automation tools for IT processes.</p>
-
             <h3>Courses Completed</h3>
             <ul>
                 <li>Google's Python Automation (Coursera).</li>
@@ -133,10 +129,10 @@
     <section class="contact" id="contactMe">
         <h1 class="text-center">Get in Touch</h1>
         <div class="form">
-            <input class="form-input" type="text" name="name" id="name" placeholder="Enter Your Name" required>
-            <input class="form-input" type="text" name="phone" id="phone" placeholder="Enter Your Phone" required>
-            <input class="form-input" type="email" name="email" id="email" placeholder="Enter Your Email" required>
-            <textarea class="form-input" name="text" id="text" cols="30" rows="10" placeholder="Type your message" required></textarea>
+            <input class="form-input" type="text" id="name" placeholder="Enter Your Name" required>
+            <input class="form-input" type="text" id="phone" placeholder="Enter Your Phone" required>
+            <input class="form-input" type="email" id="email" placeholder="Enter Your Email" required>
+            <textarea class="form-input" id="text" cols="30" rows="10" placeholder="Type your message" required></textarea>
             <button class="btn btn-sm btn-dark">Submit</button>
         </div>
     </section>
@@ -146,6 +142,7 @@
             Copyright &copy; 2024 - Arya's Portfolio - All Rights Reserved
         </p>
     </footer>
+
     <script src="js/resp.js"></script>
     <script src="js/modal.js"></script>
     <script src="js/typing.js"></script>
