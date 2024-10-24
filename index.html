@@ -5,14 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/responsive.css">
     <title>Arya's Portfolio</title>
 </head>
 
 <body>
     <nav class="navbar background h-nav-resp">
         <ul class="nav-list v-class-resp">
-            <div class="logo"><img src="img/img.jpg" alt="logo" id="profilePic">></div>
+            <div class="logo"><img src="img/img.jpg" alt="logo" id="profilePic"></div>
             <li><a href="#">Home</a></li>
             <li><a href="#aboutMe">About Me</a></li>
             <li><a href="#experienceAndSkills">Experience & Skills</a></li>
@@ -29,39 +28,22 @@
         </div>
     </nav>
 
-    <div class="popup" id="popupModal">
-        <div class="close" id="closeBtn">×</div>
-        <img src="img/img.jpg" alt="User profile picture">
-        <div class="email"><b>Personal mail : </b>aryagupta164@gmail.com</div>
-        <div class="email"><b>Edu mail : </b>arya.gupta2024@uem.edu.in</div>
-        <div class="name">Arya Gupta</div>
-        <div class="manage-account">Manage your Google Account</div>
-        <div class="buttons">
-            <div class="btn"><i class="fas fa-user-plus"></i> Add account</div>
-            <div class="btn"><i class="fas fa-sign-out-alt"></i> Sign out</div>
-        </div>
-        <div class="storage">
-            <i class="fas fa-cloud"></i> 67% of 15 GB used
-        </div>
-        <div class="footer">
-            <a href="#">Privacy policy</a> · <a href="#">Terms of service</a>
-        </div>
-    </div>
-
     <section class="background firstSection">
         <div class="box-main">
             <div class="firstHalf">
-                <p class="text-big">Hello, I’m Arya!</p>
+                <p class="text-big">
+                    <span id="dynamicText"></span><span class="cursor">|</span>
+                </p>
                 <p class="text-small">
-                    A passionate Computer Science student with a love for building innovative applications and solving real-world problems. 
-                    With a knack for learning, I enjoy coding, experimenting with new technologies, and constantly improving my skills.
+                    A passionate Computer Science student with a love for building innovative applications 
+                    and solving real-world problems. I enjoy coding, experimenting with new technologies, 
+                    and constantly improving my skills.
                 </p>
                 <div class="buttons">
                     <button class="btn">Subscribe</button>
                     <button class="btn">Watch My Journey</button>
                 </div>
             </div>
-
             <div class="secondHalf">
                 <img src="img/img.jpg" alt="Profile Pic">
             </div>
@@ -72,14 +54,9 @@
         <div class="paras">
             <p class="sectionTag text-big">About Me</p>
             <p class="sectionSubTag text-small">
-                I'm a first-year Computer Science Engineering student with a deep interest in software development, AI, and web technologies.
-                My journey in tech started with curiosity about how websites work and quickly evolved into developing my own applications.
-                I’m motivated by the challenge of finding creative solutions to complex problems.
-                Apart from coding, I enjoy learning about astronomy, exploring new technologies, and engaging in entrepreneurship projects.
-            </p>
-            <p class="sectionSubTag text-small">
-                Currently, I am working on a geolocation-based attendance tracking app as part of a project, 
-                while also diving into Python automation and JavaScript development.
+                I'm a first-year Computer Science Engineering student with a deep interest in software development, AI, and web technologies. 
+                My journey in tech started with curiosity about how websites work and evolved into developing applications.
+                Currently, I’m working on a geolocation-based attendance tracking app while learning Python automation.
             </p>
         </div>
         <div class="thumbnail">
@@ -91,20 +68,12 @@
         <div class="paras">
             <p class="sectionTag text-big">Experience & Skills</p>
             <p class="sectionSubTag text-small">
-                Over the past year, I have gained hands-on experience in:
+                My experience includes:
                 <ul>
                     <li><strong>Python Development:</strong> Built automation tools and explored data manipulation techniques.</li>
-                    <li><strong>JavaScript & Web Development:</strong> Developed dynamic web pages using HTML, CSS, and JavaScript.</li>
-                    <li><strong>Flutter:</strong> Working on mobile app development involving local data storage and syncing mechanisms.</li>
-                    <li><strong>Entrepreneurship:</strong> Leading a business project to sell custom notebooks with a ₹1000 investment.</li>
-                </ul>
-            </p>
-            <p class="sectionSubTag text-small">
-                I am continuously sharpening my skills in:
-                <ul>
-                    <li>Machine Learning & AI (exploring how AI can improve industries like healthcare)</li>
-                    <li>System Design & Problem-Solving</li>
-                    <li>Arduino & Robotics (currently building a color-sensing robotic arm)</li>
+                    <li><strong>JavaScript & Web Development:</strong> Created dynamic web pages with HTML, CSS, and JavaScript.</li>
+                    <li><strong>Flutter:</strong> Developed mobile apps with offline data syncing.</li>
+                    <li><strong>Entrepreneurship:</strong> Leading a custom notebook-selling business project.</li>
                 </ul>
             </p>
         </div>
@@ -130,8 +99,7 @@
         </p>
     </footer>
 
-    <script src="js/resp.js"></script>
-    <script src="js/modal.js"></script>
+    <script src="js/typing.js"></script>
 </body>
 
 </html>
