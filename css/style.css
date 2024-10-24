@@ -159,9 +159,11 @@ html{
     margin: auto;
     font-family: 'Ubuntu', sans-serif;
     padding: 10px;
+    color : black;
 }
 
 .section-left{
+    color: black;
     flex-direction: row-reverse;
 }
 
@@ -175,6 +177,7 @@ html{
 
 .sectionSubTag{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #303134;
 }
 
 .thumbnail img{
@@ -316,4 +319,10 @@ html{
     color: #8ab4f8;
     text-decoration: none;
     margin: 0 5px;
+}
+
+#heading {
+    height: 70px; /* Adjust this to match the height of your navbar */
+    margin-top: -70px; /* This will pull it up to the heading */
+    visibility: hidden; /* This hides the div from view */
 }
