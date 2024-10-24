@@ -1,9 +1,9 @@
 const texts = [
     "Hello, I'm Arya!",
-    "I'm a Computer Science student.",
-    "I love building apps and solving problems.",
-    "Currently working on a geolocation app.",
-    "Let's learn and grow together!"
+    "This is my portfolio!",
+    "I'm a 1st year student from UEM.",
+    "I have a knack for backend dev.",
+    "Let's learn & grow together!"
 ];
 
 let index = 0; // Index of the current text

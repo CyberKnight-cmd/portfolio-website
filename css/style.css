@@ -109,7 +109,7 @@ html{
 }
 
 .text-big {
-    font-size: 41px;
+    font-size: 39px;
     font-family: 'Ubuntu', sans-serif;
     display: flex;
     align-items: center;
@@ -125,7 +125,7 @@ html{
 }
 
 .text-small{
-    font-size: 18px;
+    font-size: 20px;
 }
 
 .btn{
