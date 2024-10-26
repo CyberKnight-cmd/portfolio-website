@@ -5,11 +5,14 @@ const texts = [
     "I have a knack for backend dev.",
     "Let's learn & grow together!"
 ];
+
+let index = 0; // Index of the current text
+let charIndex = 0; // Index of the current character in the text
+const typingSpeed = 100; // Milliseconds between each character
+const deletingSpeed = 50; // Speed for deleting characters
+const delayBetweenTexts = 1500; // Pause before typing next statement
+
 const dynamicText = document.getElementById("dynamicText");
-const typingSpeed = 200;
-const deletingSpeed = 100;
-let index = 0;
-let charIndex = 0;
 
 function typeText() {
     if (charIndex < texts[index].length) {
@@ -17,7 +20,7 @@ function typeText() {
         charIndex++;
         setTimeout(typeText, typingSpeed);
     } else {
-        setTimeout(deleteText, 2000); // Wait before starting to delete
+        setTimeout(deleteText, delayBetweenTexts);
     }
 }
 
@@ -27,10 +30,11 @@ function deleteText() {
         charIndex--;
         setTimeout(deleteText, deletingSpeed);
     } else {
-        index = (index + 1) % texts.length; // Move to the next text
-        setTimeout(typeText, typingSpeed); // Start typing the next text
+        index = (index + 1) % texts.length; // Loop back to the first text
+        setTimeout(typeText, typingSpeed);
     }
 }
 
-// Start typing effect
-typeText();
+document.addEventListener("DOMContentLoaded", () => {
+    typeText(); // Start the typing effect when the page loads
+});

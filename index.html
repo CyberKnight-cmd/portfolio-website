@@ -9,19 +9,17 @@
 </head>
 
 <body>
-    <nav class="navbar">
-        <div class="logo">
-            <img src="img/img.jpg" alt="Logo" id="profilePic">
-        </div>
-        <ul class="nav-list">
+    <nav class="navbar background h-nav-resp">
+        <ul class="nav-list v-class-resp">
+            <div class="logo"><img src="img/img.jpg" alt="logo" id="profilePic"></div>
             <li><a href="#">Home</a></li>
-            <li><a href="#aboutMe">About Me</a></li>
+            <li><a href="#about">About Me</a></li>
             <li><a href="#experienceAndSkills">Experience & Skills</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contactMe">Contact Me</a></li>
         </ul>
-        <div class="rightNav">
-            <input type="text" id="search" placeholder="Search...">
+        <div class="rightNav v-class-resp">
+            <input type="text" name="search" id="search" placeholder="Search...">
             <button class="btn btn-sm">Search</button>
         </div>
         <div class="burger">
@@ -30,38 +28,29 @@
             <div class="line"></div>
         </div>
     </nav>
-
     <div class="popup" id="popupModal">
         <div class="close" id="closeBtn">×</div>
-        <img src="img/img.jpg" alt="User Profile Picture">
-        <div class="email"><strong>Personal Mail:</strong> aryagupta164@gmail.com</div>
-        <div class="email"><strong>Edu Mail:</strong> arya.gupta2024@uem.edu.in</div>
-        <div class="name">Arya Gupta</div>
-        <div class="manage-account">Manage Your Google Account</div>
-        <div class="buttons">
-            <div class="btn"><i class="fas fa-user-plus"></i> Add Account</div>
-            <div class="btn"><i class="fas fa-sign-out-alt"></i> Sign Out</div>
+        <img src="img/img.jpg" class="profilePic" alt="User profile picture">
+        <div class="name">| <u>Arya Gupta</u> |</div>
+        <div class="email"><b>Personal mail : </b>aryagupta164@gmail.com</div>
+        <div class="email"><b>Edu mail : </b>arya.gupta2024@uem.edu.in</div>
+        <div class="manage-account">
+            <a href="mailto:aryagupta164@gmail.com" style="text-decoration: none; color: inherit;">Email me!</a>
         </div>
-        <div class="storage"><i class="fas fa-cloud"></i> 67% of 15 GB Used</div>
-        <div class="footer">
-            <a href="#">Privacy Policy</a> · <a href="#">Terms of Service</a>
         </div>
     </div>
-
-    <section class="firstSection">
+    <section class="background firstSection">
         <div class="box-main">
             <div class="firstHalf">
                 <p class="text-big">
                     <span id="dynamicText"></span><span class="cursor">|</span>
                 </p>
                 <p class="text-small">
-                    A passionate Computer Science student with a love for building innovative applications 
-                    and solving real-world problems. I enjoy coding, experimenting with new technologies, 
-                    and constantly improving my skills.
+                    A passionate Computer Science student with a love for building innovative applications and solving real-world problems. I enjoy coding, experimenting with new technologies,and constantly improving my skills.
                 </p>
                 <div class="buttons">
-                    <button class="btn">Subscribe</button>
-                    <button class="btn">Watch My Journey</button>
+                    <a href="#about" class="btn">Explore</a>
+                    <a href="#experienceAndSkills" class = "btn">Watch My Journey</a></li>
                 </div>
             </div>
             <div class="secondHalf">
@@ -69,36 +58,147 @@
             </div>
         </div>
     </section>
+    
+        <!-- About Me Section -->
+        <section id="about">
+            <h2>About Me</h2>
+            <div class="about-container">
+                <div class="about-content">
+                    <p>
+                        Hello, I'm Arya Gupta, a first-year Computer Science Engineering student with a deep interest in software development, AI, and web technologies. When I’m not immersed in studying diligently, you’ll find me enjoying music and plating guitar or painting, which fuel my creativity.<br><br> This website is dedicated to sharing my journey, insights, and tips, all aimed at inspiring you. Join me as we explore my life together through this website I made.
+                        </p>
+                        <br><br>
+                            <h2>Educational Background</h2>
+                            <div class="about-container">
+                                <div class="about-content">
+                                    <p>I'm currently pursuing my undergraduate degree in Computer Science and Engineering from University of Engineering and Management, Kolkata, where I hope to build a strong foundation in software development and hoping to get equipped with not only the theoretical knowledge but also practical experience through various projects and internships. Studying and learning new things has been my cup of tea as far as I can remember from my childhood. Therefore, I am committed to lifelong learning and often seek opportunities to expand my horizons, ensuring that I remain at the forefront of my field.
+                                    </p>
+                                </div>
+                            </div>
+                            <br>
+                            <br>
+                            <div class="project-grid">
+                                <div class="project-card">
+                                    <h3>Class 10th Result</h3>
+                                    <a href="https://drive.google.com/file/d/1uHgPCToSzE4EOV4QSGVnLH7y0DtL1xkf/view?usp=sharing" target="_blank" class="btn">View Certificate</a> <!-- Link to your research PDF -->
+                                </div>
+                                <div class="project-card">
+                                    <h3>Class 12th Result</h3>
+                                    <a href="https://drive.google.com/file/d/1uLGQTWFjlC2xTRH3ROmnTHMTxaOBiS2F/view?usp=sharing" target="_blank" class="btn">View Certificate</a> <!-- Link to your research PDF -->
+                                </div>
+                                <div class="project-card">
+                                    <h3>Website Making Competition : Techkriti Innowiz</h3>
+                                    <a href="https://drive.google.com/file/d/1uGHL70La3sHIRv6fxk4Du-XzNWKGwg56/view?usp=sharing" target="_blank" class="btn">View Certificate</a> <!-- Link to your research PDF -->
+                                </div>
+                            </div>
+                            <br>
+                            <h2>Achievements</h2>
+                            <div class="about-container">
+                                <div class="about-content">
+                                    <p>My achievements reflect my dedication and hard work throughout my academic journey. Securing 85 percent in the Madhyamik exam was a significant milestone, showcasing my commitment to excellence. Building on that success, I achieved 87 percent in the Higher Secondary exam, further solidifying my academic strengths. Additionally, my participation in many different competitions including the <b>Innowiz</b> and the <b>Augustus CodeRace</b> was both challenging and rewarding. Competing in all these events helped me to light the passion for computer science in me that is currently guiding me through my path. These accomplishments not only highlight my academic prowess but also my enthusiasm for continuous learning and growth.
+                                    </p>
+                                </div>
+                            </div>
+                        </section>
+        <section id="experienceAndSkills">
+            <h2>Experience & Skills</h2>
+                            <div class="about-container">
+                                <div class="about-content">
+                                    <p>Throughout my academic journey, I’ve embraced every project and challenge as a stepping stone toward personal and professional growth. While I am still building expertise in my domain, I can already feel a growing passion for development. I’ve been working with multiple programming languages, each offering new insights and perspectives. So far, I’ve explored <b>Python</b>, which has become my go-to language for automation and backend tasks, and <b>JavaScript</b>, which I’m learning to enhance my understanding of web development.<br> Working with <b>Flutter</b> for mobile apps has also introduced me to Dart, while <b>Arduino programming</b> has given me hands-on experience with hardware integration.<br><br>
 
-    <section class="section" id="aboutMe">
+                                        Each project, from geolocation-based attendance systems to color-sensing robotic arms, has pushed me closer to mastering the logic and creativity needed to solve real-world problems. I aim to expand my expertise further by exploring other technologies and frameworks as I progress. The coming years will be an exciting phase of discovery, where I hope to transform my curiosity into practical skills and my dedication into meaningful experiences. By the end of these four years, I see myself becoming a passionate and competent developer, prepared to leave a positive impact in the tech world.
+                                    </p>
+                                </div>
+                            </div>
+        </section>
+        <section id="projects">
+            <h2>Featured Projects</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <h3>Geolocation Attendance App</h3>
+                    <a href="https://github.com/CyberKnight-cmd/portfolio-website">View Repository</a>
+                </div>
+                <div class="project-card">
+                    <h3>Python Weekly Assignment Maker</h3>
+                    <a href="https://github.com/CyberKnight-cmd/Python-Weekly-Assignments">View Repository</a>
+                </div>
+            </div>
+        </section>
+    
+        <!-- Research Section -->
+        <section id="research">
+            <h2>Events I took part in</h2>
+            <div class="research-grid">
+                <div class="research-card">
+                    <h3>DevSprint : Multiverse of App and Web Development</h3>
+                    <a href="https://drive.google.com/file/d/1uMBJTtja6hH_yVJgd0yd56a2xzpT8572/view?usp=sharing" target="_blank" class="btn">View Certificate</a> <!-- Link to your research PDF -->
+                </div>
+                </div>
+            </div>
+            <div class="research-grid">
+                <div class="research-card">
+                    <h3>Elewayte</h3>
+                    <a href="https://drive.google.com/file/d/1uU9YXIGnn1bM_35FUGIIrE7lYoN0sP4x/view?usp=sharing" target="_blank" class="btn">View Certificate</a> <!-- Link to your research PDF -->
+                </div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <br>
+            <h2>Research Papers & Publications</h2>
+            <div class="research-grid">
+                <div class="research-card">
+                    <h3>Paper 1</h3>
+                    <a href="path-to-your-research-paper.pdf" target="_blank" class="btn">Read Full Paper</a> <!-- Link to your research PDF -->
+                </div>
+                </div>
+            </div>
+        </section>
+    
+        <script src="js/script.js"></script>
+    </body>
+
+<!-- 
+    <section class="section section-left" id="aboutMe">
+        <h1 class = "heading">About Me</h1>
         <div class="paras">
             <p class="sectionTag text-big">About Me</p>
             <p class="sectionSubTag text-small">
                 I'm a first-year Computer Science Engineering student with a deep interest in software development, AI, and web technologies. 
-                My journey started with curiosity about websites and evolved into building full-fledged applications. 
+                My journey started with curiosity about websites and evolved into building full-fledged applications.
+                </p>
+                <p>
                 Currently, I’m working on a geolocation-based attendance app and exploring Python automation.
             </p>
+            
+            
             <h3>Educational Background</h3>
             <p>Pursuing B.Tech in Computer Science Engineering at UEM Kolkata.</p>
+
             <h3>Paper/Patent Publications</h3>
-            <p>Working on a research paper on AI applications in healthcare.</p>
+            <p>Working towards a research paper on AI applications in healthcare.</p>
+
             <h3>Awards and Achievements</h3>
-            <p>Participant in <strong>Devsprint 2024</strong>, a web and app development workshop.</p>
+            <p>Participant in <b>Devsprint 2024</b>, a web and app development workshop.</p>
+
             <h3>Membership</h3>
             <p>Active member of tech communities and open-source projects.</p>
+
             <h3>Research Thrust Area</h3>
             <p>AI in healthcare and automation tools for IT processes.</p>
+
             <h3>Courses Completed</h3>
             <ul>
                 <li>Google's Python Automation (Coursera).</li>
             </ul>
         </div>
         <div class="thumbnail">
-            <img src="https://source.unsplash.com/900x900/?technology,student" alt="Coding Inspiration" class="imgFluid">
+            <img src="img/Location.png" alt="Coding Inspiration" class="imgFluid">
         </div>
     </section>
 
     <section class="section" id="experienceAndSkills">
+        <h1 class = "heading">Experience & Skills</h1>
         <div class="paras">
             <p class="sectionTag text-big">Experience & Skills</p>
             <ul class="sectionSubTag text-small">
@@ -114,6 +214,7 @@
     </section>
 
     <section class="section" id="projects">
+        <h1 class = "heading">Projects</h1>
         <div class="paras">
             <p class="sectionTag text-big">Projects</p>
             <ul class="sectionSubTag text-small">
@@ -124,15 +225,15 @@
         <div class="thumbnail">
             <img src="https://source.unsplash.com/900x900/?project,technology" alt="Projects" class="imgFluid">
         </div>
-    </section>
+    </section> -->
 
     <section class="contact" id="contactMe">
         <h1 class="text-center">Get in Touch</h1>
         <div class="form">
-            <input class="form-input" type="text" id="name" placeholder="Enter Your Name" required>
-            <input class="form-input" type="text" id="phone" placeholder="Enter Your Phone" required>
-            <input class="form-input" type="email" id="email" placeholder="Enter Your Email" required>
-            <textarea class="form-input" id="text" cols="30" rows="10" placeholder="Type your message" required></textarea>
+            <input class="form-input" type="text" name="name" id="name" placeholder="Enter Your Name" required>
+            <input class="form-input" type="text" name="phone" id="phone" placeholder="Enter Your Phone" required>
+            <input class="form-input" type="email" name="email" id="email" placeholder="Enter Your Email" required>
+            <textarea class="form-input" name="text" id="text" cols="30" rows="10" placeholder="Type your message" required></textarea>
             <button class="btn btn-sm btn-dark">Submit</button>
         </div>
     </section>
@@ -142,10 +243,10 @@
             Copyright &copy; 2024 - Arya's Portfolio - All Rights Reserved
         </p>
     </footer>
-
     <script src="js/resp.js"></script>
     <script src="js/modal.js"></script>
     <script src="js/typing.js"></script>
 </body>
 
 </html>
+--!>
